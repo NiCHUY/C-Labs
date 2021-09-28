@@ -8,10 +8,10 @@ using namespace std;
 int main() {
     double epsilon, x;
 
-    int numberOfSignsAfterComma;
+    int num;
     cout << "Enter number of signs after comma:" << endl;
-    cin >> numberOfSignsAfterComma;
-    cout << fixed << setprecision(numberOfSignsAfterComma);
+    cin >> num;
+    cout << fixed << setprecision(num);
 
     int k;
     cout << "Enter integer k > 1:" << endl;
