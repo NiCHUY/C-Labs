@@ -18,7 +18,7 @@ int strcspn(const string& s, const string& forbidden) {
 	return result;
 }
 
-void Capitalize(string& s) {
+void Capitalize(vector<char>& s) {
 	if (s.size() == 0) return;
 	if (s[0] <= 'z' && s[0] >= 'a') s[0] = s[0] - 'a' + 'A';
 	for (int i = 1; i < s.size(); i++)
