@@ -1,10 +1,9 @@
 #include <vector>
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-bool HasInVector(const string& array, char search) {
+bool HasInVector(const vector<char>& array, char search) {
 	for (char element : array)
 	{
 		if (element == search) return true;
@@ -12,7 +11,7 @@ bool HasInVector(const string& array, char search) {
 	return false;
 }
 
-int strcspn(const string& s, const string& forbidden) {
+int strcspn(const vector<char>& s, const vector<char>& forbidden) {
 	int result = 0;
 	while (result < s.size() && !HasInVector(forbidden, s[result])) ++result;
 	return result;
@@ -24,20 +23,30 @@ void Capitalize(vector<char>& s) {
 	for (int i = 1; i < s.size(); i++)
 	{
 		if (s[i - 1] == ' ' && (s[i] >= 'a' && s[i] <= 'z')) s[i] = s[i] - 'a' + 'A';
- 	}
+	}
+}
+
+vector<char> GetLine() {
+	vector<char> s;
+	char current;
+	do {
+		current = cin.get();
+		s.push_back(current);
+	} while (current != '\n');
+	return s;
 }
 
 int main() {
 	{
-		string a, b;
-		getline(cin, a);
-		getline(cin, b);
+		vector<char> a, b;
+		a = GetLine();
+		b = GetLine();
 
 		cout << strcspn(a, b) << endl;
 	}
 	{
-		string a;
-		getline(cin, a);
+		vector<char> a;
+		a = GetLine();
 
 		Capitalize(a);
 
