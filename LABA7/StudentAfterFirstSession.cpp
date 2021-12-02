@@ -13,9 +13,9 @@ StudentAfterFirstSession::StudentAfterFirstSession(const Student& student)
         : StudentAfterFirstSession(student.name_, student.course_, student.group_, student.kRecordBookNumber_) {}
 
 StudentAfterFirstSession::StudentAfterFirstSession(const StudentAfterFirstSession& student)
-        : Student(student), first_session_marks_(std::vector<int>()) {}
+        : Student(student), first_session_marks_(student.first_session_marks_) {}
 
-const std::vector<int> &StudentAfterFirstSession::GetFirstSessionMarks() const {
+const std::vector<int> StudentAfterFirstSession::GetFirstSessionMarks() const {
     return first_session_marks_;
 }
 
@@ -58,12 +58,8 @@ namespace {
 }
 
 std::ostream &operator<<(std::ostream &out, const StudentAfterFirstSession &student) {
-    out << "Student:" << "\n\t";
-    out << "Name: " << student.GetName() << "\n\t";
-    out << "Course: " << student.GetCourse() << "\n\t";
-    out << "Group: " << student.GetGroup() << "\n\t";
-    out << "Record book number: " << student.GetRecordBookNumber() << "\n\t";
-    out << "Id: " << student.GetId() << "\n\t";
-    out << "Marks for first session: " << ToString(student.GetFirstSessionMarks()) << "\n";
-    return out;
+  out << (Student&) student;
+  out << "\tMarks for first session: " << ToString(student.GetFirstSessionMarks()) << "\n\t";
+  out << "Mean mark: " << std::to_string(student.GetMeanMark()) << "\n";
+  return out;
 }

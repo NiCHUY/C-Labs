@@ -14,7 +14,7 @@ public :
     explicit StudentAfterFirstSession(const Student& student);
     StudentAfterFirstSession(const StudentAfterFirstSession& student);
 
-    const std::vector<int> &GetFirstSessionMarks() const;
+    const std::vector<int> GetFirstSessionMarks() const;
 
     void SetFirstSessionMarks(const std::vector<int> &firstSessionMarks);
 
@@ -25,5 +25,7 @@ protected:
 };
 
 double GetMeanMarkOfGroup(int group, const std::vector<StudentAfterFirstSession>& students);
+
+std::ostream &operator<<(std::ostream &out, const StudentAfterFirstSession &student);
 
 #endif //UNTITLED4_STUDENTAFTERFIRSTSESSION_H

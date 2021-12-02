@@ -3,7 +3,7 @@
 
 #include <vector>
 
-TEST(Student, getters_test) {
+TEST(Student, Getters) {
   Student student("Roman", 1, 2, 1);
   ASSERT_EQ(student.GetName(), "Roman");
   ASSERT_EQ(student.GetCourse(), 1);
@@ -11,7 +11,7 @@ TEST(Student, getters_test) {
   ASSERT_EQ(student.GetRecordBookNumber(), 1);
 }
 
-TEST(Student, setters_test) {
+TEST(Student, Setters) {
   Student student("Misha", 5, 3, 2);
   student.SetGroup(1);
   ASSERT_EQ(student.GetGroup(), 1);
@@ -21,89 +21,82 @@ TEST(Student, setters_test) {
   ASSERT_EQ(student.GetName(), "Misha");
 }
 
-TEST(Student, output_test) {
-  Student Masha("Masha", 1, 5, 9);
+namespace {
+std::string ToString(std::vector<int> vector) {
+  std::string result;
+  for (int i : vector) {
+    result += std::to_string(i) + ", ";
+  }
+  result.pop_back();
+  result.pop_back();
+
+  return result;
+}
+}
+
+TEST(Student, OutputToStream) {
+  Student masha("Masha", 1, 5, 9);
   testing::internal::CaptureStdout();
-  std::cout << Masha;
+  std::cout << masha;
   std::string output = testing::internal::GetCapturedStdout();
-  ASSERT_TRUE(output == "Student Masha, group 5, course 1");
+  ASSERT_EQ(
+      output,
+      "Student:\n\tName: Masha\n\tCourse: 1\n\tGroup: 5\n\tRecord book number: 9\n\tId: " +
+      std::to_string(masha.GetId()) + "\n");
+
+  StudentAfterFirstSession masha2(masha);
+  masha2.SetFirstSessionMarks(std::vector<int>({3, 6, 9}));
+  testing::internal::CaptureStdout();
+  std::cout << masha2;
+  output = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(
+      output,
+      "Student:\n\tName: Masha\n\tCourse: 1\n\tGroup: 5\n\tRecord book number: 9\n\tId: " + std::to_string(masha2.GetId()) +
+      "\n\tMarks for first session: " + ToString(masha2.GetFirstSessionMarks()) +
+      "\n\tMean mark: " + std::to_string(masha2.GetMeanMark()) + "\n");
+
+  StudentAfterSecondSession masha3(masha2);
+  masha3.SetSecondSessionMarks(std::vector<int>({9, 11, 110}));
+  testing::internal::CaptureStdout();
+  std::cout << masha3;
+  output = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(
+      output,
+      "Student:\n\tName: Masha\n\tCourse: 1\n\tGroup: 5\n\tRecord book number: 9\n\tId: " + std::to_string(masha3.GetId()) +
+      "\n\tMarks for first session: " + ToString(masha3.GetFirstSessionMarks()) +
+      "\n\tMarks for second session: " + ToString(masha3.GetSecondSessionMarks()) +
+      "\n\tMean mark: " + std::to_string(masha3.GetMeanMark()) + "\n");
 }
 
-TEST(SATFS, getters_test) {
-StudentAfterFirstSession student1("Misha", 2, 4, 1, std::vector<int>({1, 2, 3, 4}));
-StudentAfterFirstSession student2("Masha", 1, 4, 1, std::vector<int>({5, 6, 4, 4}));
-StudentAfterFirstSession student3("Roman", 2, 3, 1, std::vector<int>({1, 1, 1, 1}));
-ASSERT_EQ(GetMeanMarkOfGroup(4, std::vector<StudentAfterFirstSession>({student1, student2})), 29.0/8);
-ASSERT_EQ(GetMeanMarkOfGroup(3, std::vector<StudentAfterFirstSession>({student1, student2})), 1);
+TEST(StudentAfterFirstSession, MeanMarkOfGroup) {
+  StudentAfterFirstSession student1("Misha", 2, 4, 1, std::vector<int>({1, 2, 3, 4}));
+  StudentAfterFirstSession student2("Masha", 1, 4, 1, std::vector<int>({5, 6, 4, 4}));
+  StudentAfterFirstSession student3("Roman", 2, 3, 1, std::vector<int>({1, 1, 1, 1}));
+
+  ASSERT_EQ(GetMeanMarkOfGroup(4, std::vector<StudentAfterFirstSession>({student1, student2, student3})), 29.0/8);
+  ASSERT_EQ(GetMeanMarkOfGroup(3, std::vector<StudentAfterFirstSession>({student1, student2, student3})), 1);
 }
 
-TEST(StudentAfterSecondSession, set_mark) {
-StudentAfterSecondSession student("Name", 3, 4, 2,
-                 std::vector<int>{9, 9, 9, 9},
-                 std::vector<int>{9, 9, 9, 9, 9});
-student.SetFirstSessionMarks(std::vector<int>({1, 2, 3}));
-ASSERT_EQ(student.GetFirstSessionMarks(), std::vector<int>({1, 2, 3}));
+TEST(StudentAfterSecondSession, SetMarks) {
+  StudentAfterSecondSession student("Name",
+                                    3,
+                                    4,
+                                    2,
+                                    std::vector<int>{9, 9, 9, 9},
+                                    std::vector<int>{9, 9, 9, 9, 9});
+
+  ASSERT_EQ(student.GetFirstSessionMarks(), std::vector<int>({9, 9, 9, 9}));
+  ASSERT_EQ(student.GetSecondSessionMarks(), std::vector<int>({9, 9, 9, 9, 9}));
+
+  student.SetFirstSessionMarks(std::vector<int>({1, 2, 3}));
+  ASSERT_EQ(student.GetFirstSessionMarks(), std::vector<int>({1, 2, 3}));
+
+  student.SetSecondSessionMarks(std::vector<int>({1, 2, 3, 4}));
+  ASSERT_EQ(student.GetSecondSessionMarks(), std::vector<int>({1, 2, 3, 4}));
 }
 
-
-
-
-
-
-
-
-
-
-
-TEST(SATSS, get_mark_except_cases) {
-EXPECT_ANY_THROW(SATSS Bakhshi1("Bakhshi", 4, 2,
-std::vector<unsigned>{9, 9, 9, 9},
-std::vector<unsigned>{9, 9, 9, 9, 11}));
-EXPECT_ANY_THROW(SATSS Bakhshi2("Bakhshi", 4, 2,
-std::vector<unsigned>{9, 9, 9, 9},
-std::vector<unsigned>{9, 9, 9, 9}));
-EXPECT_ANY_THROW(SATSS Bakhshi3("Bakhshi", 4, 2,
-std::vector<unsigned>{9, 9, 9, 9},
-std::vector<unsigned>{9, 9, 9, 0, 9}));
-SATSS Bakhshi("Bakhshi",
-              4,
-              2,
-              std::vector<unsigned>{9, 9, 9, 9},
-              std::vector<unsigned>{9, 9, 9, 9, 9});
-ASSERT_EQ(Bakhshi.getMark(Student::kChemistry, 1), -1);
-ASSERT_EQ(Bakhshi.getMark(Student::kSomething, 2), -1);
-ASSERT_EQ(Bakhshi.getMark(Student::kChemistry, 3), -1);
-
-}
-
-TEST(SATSS, set_mark_throw) {
-SATSS Kushagra("Kushagra", 2, 2, std::vector<unsigned>{9, 9, 9, 9},
-               std::vector<unsigned>{9, 9, 9, 9, 9});
-EXPECT_ANY_THROW(Kushagra.setMark(Student::kMath, 1, 3));
-EXPECT_ANY_THROW(Kushagra.setMark(Student::kMath, 0, 3));
-EXPECT_ANY_THROW(Kushagra.setMark(Student::kMath, 1, 0));
-EXPECT_ANY_THROW(Kushagra.setMark(Student::kMath, 1, 3));
-}
-
-TEST(SATSS, ostream_operator) {
-SATSS Mohammed("Mohammed", 4, 2,
-               std::vector<unsigned>{2, 4, 6, 8},
-               std::vector<unsigned>{1, 2, 3, 4, 5});
-testing::internal::CaptureStdout();
-std::cout << Mohammed;
-std::string output = testing::internal::GetCapturedStdout();
-ASSERT_TRUE(output == "Student after the 2nd session Mohammed, group 2, course 4, average mark is 3.88");
-}
-
-TEST(DoubleToStringWithPrecision, general_test) {
-std::string str = DoubleToStringWithPrecision(2.351, 1);
-ASSERT_EQ(str, "2.3");
-str = DoubleToStringWithPrecision(1.0 / 3, 5);
-ASSERT_EQ(str, "0.33333");
-}
-
-TEST(Students, UniqueID_test) {
-Student A("A", 1, 1);
-Student B("A", 1, 1);
-ASSERT_TRUE(A.studentID() != B.studentID());
+TEST(Students, UniqueID) {
+  Student a("A", 1, 1, 1);
+  Student b("A", 1, 1, 1);
+  ASSERT_TRUE(a.GetId() != b.GetId());
 }

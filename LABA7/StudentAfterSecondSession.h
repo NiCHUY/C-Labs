@@ -22,7 +22,7 @@ public :
     explicit StudentAfterSecondSession(const StudentAfterFirstSession& student);
     StudentAfterSecondSession(const StudentAfterSecondSession& student);
 
-    const std::vector<int> &getSecondSessionMarks() const;
+    const std::vector<int> GetSecondSessionMarks() const;
 
     void SetSecondSessionMarks(const std::vector<int> &secondSessionMarks);
 
@@ -31,5 +31,7 @@ public :
 protected:
     std::vector<int> second_session_marks_;
 };
+
+std::ostream &operator<<(std::ostream &out, const StudentAfterSecondSession &student);
 
 #endif //UNTITLED4_STUDENTAFTERSECONDSESSION_H
