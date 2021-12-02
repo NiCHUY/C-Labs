@@ -11,7 +11,7 @@ Student::Student(const Student& student)
 
 int Student::next_id_ = 0;
 
-char *Student::GetName() {
+char *Student::GetName() const {
     return name_;
 }
 

@@ -3,14 +3,20 @@
 
 #include <iostream>
 
+class StudentAfterFirstSession;
+class StudentAfterSecondSession;
+
 class Student {
 public:
+    friend class StudentAfterFirstSession;
+    friend class StudentAfterSecondSession;
+
     Student() = delete;
 
     Student(char* name, int course, int group, int record_book_number);
     Student(const Student& student);
 
-    char *GetName();
+    char *GetName() const;
 
     void SetName(char *name);
 
@@ -35,5 +41,7 @@ protected:
 
     static int next_id_;
 };
+
+std::ostream &operator<<(std::ostream &out, const Student &student);
 
 #endif //UNTITLED4_STUDENT_H

@@ -18,35 +18,12 @@ public :
 
     void SetFirstSessionMarks(const std::vector<int> &firstSessionMarks);
 
-    virtual double GetMeanOfMarks() const;
+    virtual double GetMeanMark() const;
 
 protected:
     std::vector<int> first_session_marks_;
 };
 
-double GetMeanMarkOfGroup(int group, const std::vector<StudentAfterFirstSession*>& students) {
-    double marks_sum = 0;
-    int students_count = 0;
-    for (const StudentAfterFirstSession* student : students) {
-        if (student->GetGroup() != group) continue;
-
-        marks_sum += student->GetMeanOfMarks();
-        ++students_count;
-    }
-
-    return marks_sum / students_count;
-}
-
-double GetMeanMark(std::vector<StudentAfterFirstSession*> students) {
-    double marks_sum = 0;
-    int students_count = 0;
-    for (const StudentAfterFirstSession* student : students) {
-        marks_sum += student->GetMeanOfMarks();
-        ++students_count;
-    }
-
-    return marks_sum / students_count;
-}
-
+double GetMeanMarkOfGroup(int group, const std::vector<StudentAfterFirstSession>& students);
 
 #endif //UNTITLED4_STUDENTAFTERFIRSTSESSION_H

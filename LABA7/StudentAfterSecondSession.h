@@ -26,7 +26,7 @@ public :
 
     void SetSecondSessionMarks(const std::vector<int> &secondSessionMarks);
 
-    double GetMeanOfMarks() const;
+    double GetMeanMark() const override;
 
 protected:
     std::vector<int> second_session_marks_;

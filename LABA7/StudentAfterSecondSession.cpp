@@ -3,19 +3,15 @@
 #include <string>
 #include <vector>
 
-namespace {
-    int kMarkCount = 5;
-}
-
 StudentAfterSecondSession::StudentAfterSecondSession(char* name, int course, int group, int record_book_number)
         : StudentAfterFirstSession(name, course, group, record_book_number),
-          second_session_marks_(std::vector<int>(kMarkCount)) {}
+          second_session_marks_(std::vector<int>()) {}
 
 StudentAfterSecondSession::StudentAfterSecondSession(
         char* name, int course, int group, int record_book_number,
         const std::vector<int>& first_session_marks)
         : StudentAfterFirstSession(name, course, group, record_book_number, first_session_marks),
-          second_session_marks_(std::vector<int>(kMarkCount)) {}
+          second_session_marks_(std::vector<int>()) {}
 
 StudentAfterSecondSession::StudentAfterSecondSession(
         char* name, int course, int group, int record_book_number,
@@ -25,7 +21,7 @@ StudentAfterSecondSession::StudentAfterSecondSession(
 
 StudentAfterSecondSession::StudentAfterSecondSession(const StudentAfterFirstSession& student)
         : StudentAfterFirstSession(student),
-          second_session_marks_(std::vector<int>(kMarkCount)){}
+          second_session_marks_(std::vector<int>()){}
 
 StudentAfterSecondSession::StudentAfterSecondSession(const StudentAfterSecondSession& student)
         : StudentAfterFirstSession(student), second_session_marks_(student.second_session_marks_) {}
@@ -38,7 +34,7 @@ void StudentAfterSecondSession::SetSecondSessionMarks(const std::vector<int> &se
     second_session_marks_ = secondSessionMarks;
 }
 
-double StudentAfterSecondSession::GetMeanOfMarks() const {
+double StudentAfterSecondSession::GetMeanMark() const {
     double marks_sum = 0;
     for (int i : first_session_marks_) {
         marks_sum += i;
