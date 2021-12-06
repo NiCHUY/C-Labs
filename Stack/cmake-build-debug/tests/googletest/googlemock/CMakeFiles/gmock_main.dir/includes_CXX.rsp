@@ -1,0 +1,1 @@
+-isystem C:/CLionProjects/Stack/tests/googletest/googlemock/include -isystem C:/CLionProjects/Stack/tests/googletest/googlemock -isystem C:/CLionProjects/Stack/tests/googletest/googletest/include -isystem C:/CLionProjects/Stack/tests/googletest/googletest
