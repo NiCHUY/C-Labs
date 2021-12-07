@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\CLionProjects\Stack
+CMAKE_SOURCE_DIR = C:\Users\Роман\Desktop\Labs\Stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\CLionProjects\Stack\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,14 +131,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\Stack\cmake-build-debug\CMakeFiles C:\CLionProjects\Stack\cmake-build-debug\tests\\CMakeFiles\progress.marks
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\Stack\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\CMakeFiles C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests\\CMakeFiles\progress.marks
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/clean
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,22 +147,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/Google_Tests_run.dir/rule:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/CMakeFiles/Google_Tests_run.dir/rule
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/CMakeFiles/Google_Tests_run.dir/rule
 .PHONY : tests/CMakeFiles/Google_Tests_run.dir/rule
 
 # Convenience name for target.
@@ -171,7 +171,7 @@ Google_Tests_run: tests/CMakeFiles/Google_Tests_run.dir/rule
 
 # fast build rule for target.
 Google_Tests_run/fast:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/build
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/build
 .PHONY : Google_Tests_run/fast
 
 __/stack.obj: __/stack.cpp.obj
@@ -179,7 +179,7 @@ __/stack.obj: __/stack.cpp.obj
 
 # target to build an object file
 __/stack.cpp.obj:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.obj
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.obj
 .PHONY : __/stack.cpp.obj
 
 __/stack.i: __/stack.cpp.i
@@ -187,7 +187,7 @@ __/stack.i: __/stack.cpp.i
 
 # target to preprocess a source file
 __/stack.cpp.i:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.i
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.i
 .PHONY : __/stack.cpp.i
 
 __/stack.s: __/stack.cpp.s
@@ -195,7 +195,7 @@ __/stack.s: __/stack.cpp.s
 
 # target to generate assembly for a file
 __/stack.cpp.s:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.s
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.s
 .PHONY : __/stack.cpp.s
 
 stack_tests.obj: stack_tests.cpp.obj
@@ -203,7 +203,7 @@ stack_tests.obj: stack_tests.cpp.obj
 
 # target to build an object file
 stack_tests.cpp.obj:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.obj
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.obj
 .PHONY : stack_tests.cpp.obj
 
 stack_tests.i: stack_tests.cpp.i
@@ -211,7 +211,7 @@ stack_tests.i: stack_tests.cpp.i
 
 # target to preprocess a source file
 stack_tests.cpp.i:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.i
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.i
 .PHONY : stack_tests.cpp.i
 
 stack_tests.s: stack_tests.cpp.s
@@ -219,7 +219,7 @@ stack_tests.s: stack_tests.cpp.s
 
 # target to generate assembly for a file
 stack_tests.cpp.s:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.s
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.s
 .PHONY : stack_tests.cpp.s
 
 # Help Target
@@ -252,6 +252,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -2,7 +2,6 @@
 #include <cstdint>
 
 #include "stack.h"
-template ();
 size_t Stack::Size() const {
   return size_;
 }

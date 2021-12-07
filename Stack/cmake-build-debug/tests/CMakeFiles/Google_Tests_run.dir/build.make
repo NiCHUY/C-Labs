@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\CLionProjects\Stack
+CMAKE_SOURCE_DIR = C:\Users\Роман\Desktop\Labs\Stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\CLionProjects\Stack\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/Google_Tests_run.dir/depend.make
@@ -68,30 +68,30 @@ include tests/CMakeFiles/Google_Tests_run.dir/flags.make
 tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/flags.make
 tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/includes_CXX.rsp
 tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.obj: ../tests/stack_tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Stack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.obj"
-	cd /d C:\CLionProjects\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Google_Tests_run.dir\stack_tests.cpp.obj -c C:\CLionProjects\Stack\tests\stack_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.obj"
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Google_Tests_run.dir\stack_tests.cpp.obj -c C:\Users\Роман\Desktop\Labs\Stack\tests\stack_tests.cpp
 
 tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.i"
-	cd /d C:\CLionProjects\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\CLionProjects\Stack\tests\stack_tests.cpp > CMakeFiles\Google_Tests_run.dir\stack_tests.cpp.i
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Роман\Desktop\Labs\Stack\tests\stack_tests.cpp > CMakeFiles\Google_Tests_run.dir\stack_tests.cpp.i
 
 tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.s"
-	cd /d C:\CLionProjects\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\CLionProjects\Stack\tests\stack_tests.cpp -o CMakeFiles\Google_Tests_run.dir\stack_tests.cpp.s
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Роман\Desktop\Labs\Stack\tests\stack_tests.cpp -o CMakeFiles\Google_Tests_run.dir\stack_tests.cpp.s
 
 tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/flags.make
 tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/includes_CXX.rsp
 tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.obj: ../stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Stack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.obj"
-	cd /d C:\CLionProjects\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Google_Tests_run.dir\__\stack.cpp.obj -c C:\CLionProjects\Stack\stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.obj"
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Google_Tests_run.dir\__\stack.cpp.obj -c C:\Users\Роман\Desktop\Labs\Stack\stack.cpp
 
 tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/__/stack.cpp.i"
-	cd /d C:\CLionProjects\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\CLionProjects\Stack\stack.cpp > CMakeFiles\Google_Tests_run.dir\__\stack.cpp.i
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Роман\Desktop\Labs\Stack\stack.cpp > CMakeFiles\Google_Tests_run.dir\__\stack.cpp.i
 
 tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/__/stack.cpp.s"
-	cd /d C:\CLionProjects\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\CLionProjects\Stack\stack.cpp -o CMakeFiles\Google_Tests_run.dir\__\stack.cpp.s
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Роман\Desktop\Labs\Stack\stack.cpp -o CMakeFiles\Google_Tests_run.dir\__\stack.cpp.s
 
 # Object files for target Google_Tests_run
 Google_Tests_run_OBJECTS = \
@@ -110,18 +110,18 @@ tests/Google_Tests_run.exe: lib/libgtestd.a
 tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/linklibs.rsp
 tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/objects1.rsp
 tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\CLionProjects\Stack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Google_Tests_run.exe"
-	cd /d C:\CLionProjects\Stack\cmake-build-debug\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Google_Tests_run.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Google_Tests_run.exe"
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Google_Tests_run.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/Google_Tests_run.dir/build: tests/Google_Tests_run.exe
 .PHONY : tests/CMakeFiles/Google_Tests_run.dir/build
 
 tests/CMakeFiles/Google_Tests_run.dir/clean:
-	cd /d C:\CLionProjects\Stack\cmake-build-debug\tests && $(CMAKE_COMMAND) -P CMakeFiles\Google_Tests_run.dir\cmake_clean.cmake
+	cd /d C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests && $(CMAKE_COMMAND) -P CMakeFiles\Google_Tests_run.dir\cmake_clean.cmake
 .PHONY : tests/CMakeFiles/Google_Tests_run.dir/clean
 
 tests/CMakeFiles/Google_Tests_run.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\CLionProjects\Stack C:\CLionProjects\Stack\tests C:\CLionProjects\Stack\cmake-build-debug C:\CLionProjects\Stack\cmake-build-debug\tests C:\CLionProjects\Stack\cmake-build-debug\tests\CMakeFiles\Google_Tests_run.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Роман\Desktop\Labs\Stack C:\Users\Роман\Desktop\Labs\Stack\tests C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests C:\Users\Роман\Desktop\Labs\Stack\cmake-build-debug\tests\CMakeFiles\Google_Tests_run.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/Google_Tests_run.dir/depend
 

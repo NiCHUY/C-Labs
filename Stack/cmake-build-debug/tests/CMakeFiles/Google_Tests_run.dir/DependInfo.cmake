@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/CLionProjects/Stack/stack.cpp" "C:/CLionProjects/Stack/cmake-build-debug/tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.obj"
-  "C:/CLionProjects/Stack/tests/stack_tests.cpp" "C:/CLionProjects/Stack/cmake-build-debug/tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.obj"
+  "C:/Users/Роман/Desktop/Labs/Stack/stack.cpp" "C:/Users/Роман/Desktop/Labs/Stack/cmake-build-debug/tests/CMakeFiles/Google_Tests_run.dir/__/stack.cpp.obj"
+  "C:/Users/Роман/Desktop/Labs/Stack/tests/stack_tests.cpp" "C:/Users/Роман/Desktop/Labs/Stack/cmake-build-debug/tests/CMakeFiles/Google_Tests_run.dir/stack_tests.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -25,8 +25,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/CLionProjects/Stack/cmake-build-debug/tests/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "C:/CLionProjects/Stack/cmake-build-debug/tests/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "C:/Users/Роман/Desktop/Labs/Stack/cmake-build-debug/tests/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "C:/Users/Роман/Desktop/Labs/Stack/cmake-build-debug/tests/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
