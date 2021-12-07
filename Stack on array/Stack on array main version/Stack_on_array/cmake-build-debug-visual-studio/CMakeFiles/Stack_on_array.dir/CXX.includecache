@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/CLionProjects/Stack_on_array/Stack.h
+cstdint
+-
+ostream
+C:/CLionProjects/Stack_on_array/ostream
+compare
+C:/CLionProjects/Stack_on_array/compare
+
+C:/CLionProjects/Stack_on_array/stack.cpp
+stack.h
+C:/CLionProjects/Stack_on_array/Stack.h
+iostream
+-
+
