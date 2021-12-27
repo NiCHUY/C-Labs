@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\CLionProjects\Calculator
+CMAKE_SOURCE_DIR = C:\CLionProjects\LABA8
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\CLionProjects\Calculator\cmake-build-debug
+CMAKE_BINARY_DIR = C:\CLionProjects\LABA8\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Calculator.dir/depend.make
@@ -67,29 +67,29 @@ include CMakeFiles/Calculator.dir/flags.make
 
 CMakeFiles/Calculator.dir/main.cpp.obj: CMakeFiles/Calculator.dir/flags.make
 CMakeFiles/Calculator.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Calculator.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculator.dir\main.cpp.obj -c C:\CLionProjects\Calculator\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\LABA8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Calculator.dir/main.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculator.dir\main.cpp.obj -c C:\CLionProjects\LABA8\main.cpp
 
 CMakeFiles/Calculator.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculator.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\CLionProjects\Calculator\main.cpp > CMakeFiles\Calculator.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\CLionProjects\LABA8\main.cpp > CMakeFiles\Calculator.dir\main.cpp.i
 
 CMakeFiles/Calculator.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculator.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\CLionProjects\Calculator\main.cpp -o CMakeFiles\Calculator.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\CLionProjects\LABA8\main.cpp -o CMakeFiles\Calculator.dir\main.cpp.s
 
 CMakeFiles/Calculator.dir/Calculator.cpp.obj: CMakeFiles/Calculator.dir/flags.make
 CMakeFiles/Calculator.dir/Calculator.cpp.obj: ../Calculator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Calculator.dir/Calculator.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculator.dir\Calculator.cpp.obj -c C:\CLionProjects\Calculator\Calculator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\LABA8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Calculator.dir/Calculator.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculator.dir\Calculator.cpp.obj -c C:\CLionProjects\LABA8\Calculator.cpp
 
 CMakeFiles/Calculator.dir/Calculator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculator.dir/Calculator.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\CLionProjects\Calculator\Calculator.cpp > CMakeFiles\Calculator.dir\Calculator.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\CLionProjects\LABA8\Calculator.cpp > CMakeFiles\Calculator.dir\Calculator.cpp.i
 
 CMakeFiles/Calculator.dir/Calculator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculator.dir/Calculator.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\CLionProjects\Calculator\Calculator.cpp -o CMakeFiles\Calculator.dir\Calculator.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\CLionProjects\LABA8\Calculator.cpp -o CMakeFiles\Calculator.dir\Calculator.cpp.s
 
 # Object files for target Calculator
 Calculator_OBJECTS = \
@@ -105,7 +105,7 @@ Calculator.exe: CMakeFiles/Calculator.dir/build.make
 Calculator.exe: CMakeFiles/Calculator.dir/linklibs.rsp
 Calculator.exe: CMakeFiles/Calculator.dir/objects1.rsp
 Calculator.exe: CMakeFiles/Calculator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\CLionProjects\Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Calculator.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\CLionProjects\LABA8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Calculator.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Calculator.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -117,6 +117,6 @@ CMakeFiles/Calculator.dir/clean:
 .PHONY : CMakeFiles/Calculator.dir/clean
 
 CMakeFiles/Calculator.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\CLionProjects\Calculator C:\CLionProjects\Calculator C:\CLionProjects\Calculator\cmake-build-debug C:\CLionProjects\Calculator\cmake-build-debug C:\CLionProjects\Calculator\cmake-build-debug\CMakeFiles\Calculator.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\CLionProjects\LABA8 C:\CLionProjects\LABA8 C:\CLionProjects\LABA8\cmake-build-debug C:\CLionProjects\LABA8\cmake-build-debug C:\CLionProjects\LABA8\cmake-build-debug\CMakeFiles\Calculator.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Calculator.dir/depend
 

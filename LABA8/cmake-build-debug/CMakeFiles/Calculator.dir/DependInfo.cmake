@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/CLionProjects/Calculator/Calculator.cpp" "C:/CLionProjects/Calculator/cmake-build-debug/CMakeFiles/Calculator.dir/Calculator.cpp.obj"
-  "C:/CLionProjects/Calculator/main.cpp" "C:/CLionProjects/Calculator/cmake-build-debug/CMakeFiles/Calculator.dir/main.cpp.obj"
+  "C:/CLionProjects/LABA8/Calculator.cpp" "C:/CLionProjects/LABA8/cmake-build-debug/CMakeFiles/Calculator.dir/Calculator.cpp.obj"
+  "C:/CLionProjects/LABA8/main.cpp" "C:/CLionProjects/LABA8/cmake-build-debug/CMakeFiles/Calculator.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

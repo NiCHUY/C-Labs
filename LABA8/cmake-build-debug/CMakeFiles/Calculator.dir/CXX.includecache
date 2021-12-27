@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/CLionProjects/Calculator/Calculator.cpp
+C:/CLionProjects/LABA8/Calculator.cpp
 Calculator.h
-C:/CLionProjects/Calculator/Calculator.h
+C:/CLionProjects/LABA8/Calculator.h
 algorithm
 -
 cassert
@@ -22,7 +22,7 @@ vector
 cmath
 -
 
-C:/CLionProjects/Calculator/Calculator.h
+C:/CLionProjects/LABA8/Calculator.h
 algorithm
 -
 cassert
@@ -30,15 +30,25 @@ cassert
 string
 -
 Stack.h
-C:/CLionProjects/Calculator/Stack.h
+C:/CLionProjects/LABA8/Stack.h
 map
 -
 vector
 -
 
-C:/CLionProjects/Calculator/Stack.h
+C:/CLionProjects/LABA8/Stack.h
 cstdint
 -
 iostream
+-
+
+C:/CLionProjects/LABA8/main.cpp
+iostream
+-
+Calculator.h
+C:/CLionProjects/LABA8/Calculator.h
+stack.h
+C:/CLionProjects/LABA8/Stack.h
+string
 -
 
