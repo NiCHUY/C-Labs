@@ -1,3 +1,0 @@
-C:/CLionProjects/LABA8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/CLionProjects/LABA8/cmake-build-debug/CMakeFiles/Calculator.dir
-C:/CLionProjects/LABA8/cmake-build-debug/CMakeFiles/edit_cache.dir
