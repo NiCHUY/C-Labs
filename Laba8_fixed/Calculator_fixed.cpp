@@ -53,7 +53,7 @@ Calculator::Token::Token(const Type type) : type(type) {
     }
 }
 
-Calculator::Token::Token(int constant_value) : constant_value(constant_value) {}
+Calculator::Token::Token(double constant_value) : constant_value(constant_value) {}
 
 Calculator::Token::Type Calculator::Token::GetTokenType(const std::string& s) {
     assert(!s.empty());
@@ -194,14 +194,14 @@ Calculator::Token Calculator::PopOneToken(Stack<Token>& expression) {
     return operand;
 }
 
-std::pair<int, int> Calculator::PopTwoOperands(Stack<Token>& expression) {
+std::pair<double, double> Calculator::PopTwoOperands(Stack<Token>& expression) {
     std::pair<Token, Token> two_tokens = PopTwoTokens(expression);
     return std::make_pair(
             two_tokens.first.constant_value,
             two_tokens.second.constant_value);
 }
 
-int Calculator::PopOneOperand(Stack<Token>& expression) {
+double Calculator::PopOneOperand(Stack<Token>& expression) {
     Token token = PopOneToken(expression);
     return token.constant_value;
 }
@@ -210,30 +210,30 @@ void Calculator::PerformOperation(
         Stack<Token>& operands_stack,
         const Token& operation_token) {
     const Token::Type operation = operation_token.type;
-    int operation_result;
+    double operation_result;
     switch (operation) {
         case Token::Type::kMinus : {
-            std::pair<int, int> operands = PopTwoOperands(operands_stack);
+            std::pair<double, double> operands = PopTwoOperands(operands_stack);
             operation_result = operands.first - operands.second;
             break;
         }
         case Token::Type::kPlus: {
-            std::pair<int, int> operands = PopTwoOperands(operands_stack);
+            std::pair<double, double> operands = PopTwoOperands(operands_stack);
             operation_result = operands.first + operands.second;
             break;
         }
         case Token::Type::kPower: {
-            std::pair<int, int> operands = PopTwoOperands(operands_stack);
+            std::pair<double, double> operands = PopTwoOperands(operands_stack);
             operation_result = pow(operands.first, operands.second);
             break;
         }
         case Token::Type::kMultiply: {
-            std::pair<int, int> operands = PopTwoOperands(operands_stack);
+            std::pair<double, double> operands = PopTwoOperands(operands_stack);
             operation_result = operands.first * operands.second;
             break;
         }
         case Token::Type::kDivide: {
-            std::pair<int, int> operands = PopTwoOperands(operands_stack);
+            std::pair<double, double> operands = PopTwoOperands(operands_stack);
             operation_result = operands.first / operands.second;
             break;
         }
@@ -245,7 +245,7 @@ void Calculator::PerformOperation(
     operands_stack.Push(Token(operation_result));
 }
 
-int Calculator::Calculate(const std::string& expression) {
+double Calculator::Calculate(const std::string& expression) {
     std::vector<Token> tokenized = Tokenize(expression);
     Stack<Token> polish_notation = GetPolishNotation(tokenized);
 

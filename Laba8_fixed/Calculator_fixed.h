@@ -15,7 +15,7 @@ class Calculator {
 public:
     Calculator();
 
-    static int Calculate(const std::string& expression);
+    static double Calculate(const std::string& expression);
 
 private:
     struct Token {
@@ -38,7 +38,7 @@ private:
 
         Token(Type type);
 
-        Token(int constant_value);
+        Token(double constant_value);
 
         static Type GetTokenType(const std::string& s);
 
@@ -47,7 +47,7 @@ private:
         static const std::map<Type, int> is_operation;
 
         Type type = Type::kUnknown;
-        int constant_value;
+        double constant_value;
         int operation_priority;
     };
 
@@ -59,9 +59,9 @@ private:
 
     static Token PopOneToken(Stack<Token>& expression);
 
-    static std::pair<int, int> PopTwoOperands(Stack<Token>& expression);
+    static std::pair<double, double> PopTwoOperands(Stack<Token>& expression);
 
-    static int PopOneOperand(Stack<Token>& expression);
+    static double PopOneOperand(Stack<Token>& expression);
 
     static void PerformOperation(
             Stack<Token>& operands,

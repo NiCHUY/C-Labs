@@ -1,3 +1,0 @@
-C:/CLionProjects/Calculator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/CLionProjects/Calculator/cmake-build-debug/CMakeFiles/Calculator.dir
-C:/CLionProjects/Calculator/cmake-build-debug/CMakeFiles/edit_cache.dir
